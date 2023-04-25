@@ -7,5 +7,9 @@ plugins {
 dependencies {
     implementation(projects.dbugCore)
     implementation("org.springframework.boot:spring-boot-starter-validation")
-    api("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+}
+
+tasks.getByName<Jar>("bootJar") {
+    enabled = false
 }

@@ -9,4 +9,9 @@ dependencies {
     implementation(projects.dbugPresentation)
     implementation(projects.dbugCore)
     implementation(projects.dbugPersistence)
+    implementation("org.springframework.boot:spring-boot-autoconfigure")
+}
+
+tasks.getByName<Jar>("jar") {
+    enabled = false
 }
